@@ -1,0 +1,13 @@
+apiVersion: "io.algates/v1alpha1"
+kind: ExposedApp
+metadata:
+  name: testexposedappalgates
+  labels:
+    app: algates
+spec:
+  nameOverride: tesexposeapp
+  imageRef: tutum/hello-world
+  replica: 6
+  testobj:
+    name1: testname4
+    name2: testname2
